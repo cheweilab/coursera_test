@@ -23,7 +23,7 @@ h1 {
 
 header p {
   float: right;
-  width: 570px;
+  width: 570 px;
   font-style: italic;
   margin-top: 10px;
 }
@@ -53,10 +53,11 @@ main {
 
 .comment-input button {
   font-weight: bold;
-  padding: 3px;
+  padding: 5px;
+  width:40px;
   border-radius: 5px;
   color: ivory;
-  background: olivedrab;
+  background: red;
   cursor: pointer;
   font-size: 1.5em;
   margin-left: 5px;
@@ -71,6 +72,8 @@ main {
   padding: 5px;
   margin-bottom: 10px;
   border-radius: 5px;
+  display: flex;
+  align-items: center;
 }
 
 .comments p:nth-child(even) {
@@ -90,3 +93,10 @@ footer {
 .comment_input span:hover {
     cursor: pointer;
     }
+
+
+  
+  .comments p input[type="checkbox"] {
+      margin-right: 10px;
+  }
+  
