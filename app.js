@@ -70,7 +70,7 @@ var main = function () {
                 comment_text = $(".comment-input input").val();
 
             if (comment_text !== "") {
-                $new_comment.append($checkbox);
+                $new_comment.append($checkbox).fadeIn();
                 $new_comment.append(document.createTextNode(comment_text));
                 $(".comments").append($new_comment);
                 $(".comment-input input").val("");
@@ -79,5 +79,14 @@ var main = function () {
     });
 
 }; 
+
+var $content = $("<div><h5>Contact Us</h5></div>").hide();
+var $moreContent = $("<p><strong>Email:</strong> kanahei.hsieh@gmail.com</p>").hide();
+
+$("body").append($content);
+$content.slideDown(2000);
+$("body").append($moreContent);
+$moreContent.fadeIn();
+
 
 $(document).ready(main);
