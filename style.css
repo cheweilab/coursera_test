@@ -95,8 +95,23 @@ main {
 
 footer {
     font-size: smaller;
-    margin-top: 5px;
+    margin-top: 10px;
     clear: both;
+}
+
+footer button {
+  background-color: #4CAF50;
+  margin-top: 10px;
+  color: white;
+  padding: 5px 5px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+footer button:hover {
+  background-color: #45a049;
 }
 
 .comment_input span:hover {
@@ -113,12 +128,12 @@ footer {
     display: inline-block;
     border-radius: 5px 5px 0 0;
     width: 100px;
-    margin-right: 10px;
+    margin-right: 2px;
     text-align: center;
     background: #ddd;
     padding: 5px;
     }
 
     .tabs a span.active {
-      background: #eee;
+      background:red;
       }
