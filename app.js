@@ -78,15 +78,21 @@ var main = function () {
         }
     });
 
+
+
+    
+
 }; 
 
-var $content = $("<div><h5>Contact Us</h5></div>").hide();
-var $moreContent = $("<p><strong>Email:</strong> kanahei.hsieh@gmail.com</p>").hide();
+var $content = $("<div>Hello World!</div>").hide();
+var $moreContent = $("<div>Goodbye World!</div>").hide();
 
 $("body").append($content);
-$content.slideDown(2000);
-$("body").append($moreContent);
-$moreContent.fadeIn();
+$content.slideDown(2000, function () {
+  $("body").append($moreContent);
+  $moreContent.fadeIn();
+  $moreContent.fadeOut(3000);
 
+});
 
 $(document).ready(main);
